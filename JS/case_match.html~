@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to do a global, case-insensitive search for "is" in a string.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction()
+{
+var str = "Is this all there is?";
+var patt1 = /is/gi;
+var result = str.match(patt1);
+document.getElementById("demo").innerHTML=result;
+}
+</script>
+
+</body>
+</html>
+
+

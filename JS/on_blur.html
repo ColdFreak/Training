@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction()
+{
+var x=document.getElementById("fname");
+// x.valueは入力した内容を取得
+x.value=x.value.toUpperCase();
+}
+</script>
+</head>
+<body>
+<!-- inputの中に英文字を入れて、フォーカスが離れたら、英文字を大文字にする-->
+Enter your name: <input type="text" id="fname" onblur="myFunction()">
+
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+// ボタンをクリックしたら、id=w3sのhref属性を取得することが出来る
+$(document).ready(function(){
+  $("button").click(function(){
+    alert($("#w3s").attr("href"));
+  });
+});
+</script>
+</head>
+
+<body>
+<p><a href="http://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+<button>Show href Value</button>
+</body>
+</html>

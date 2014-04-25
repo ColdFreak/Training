@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to encode a URI.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction()
+{
+var uri = "my test.asp?name=ståle&car=saab";
+var res = encodeURI(uri);
+document.getElementById("demo").innerHTML=res;
+}
+</script>
+
+</body>
+</html>

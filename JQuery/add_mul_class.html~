@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+// id=div1のタグに対して、importantとblue両方のクラスを追加する。
+// そして、.important と.blueの形で　定義する。
+// 一個のタグに対してaddClassを使って、複数のクラスを追加することができる
+    $("#div1").addClass("important blue");
+  });
+});
+</script>
+<style type="text/css">
+.important
+{
+font-weight:bold;
+font-size:xx-large;
+}
+.blue
+{
+color:blue;
+}
+</style>
+</head>
+<body>
+
+<div id="div1">This is some text.</div>
+<div id="div2">This is some text.</div>
+<br>
+<button>Add classes to first div element</button>
+
+</body>
+</html>

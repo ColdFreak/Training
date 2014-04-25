@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to display the position of the match.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction()
+{
+var str="Visit W3Schools!"; 
+var n=str.search("W3Schools");
+document.getElementById("demo").innerHTML=n; // n = 6
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,23 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script language="text/javascript">
+	var ul = document.getElementById("sample_list");
+	var ch = ul.childNodes;
+	for (var i = 0, len = ch.length; i < len; i++) {
+		    console.log(ch[i].nodeName);
+			}
+</script>
+</head>
+<body>
+<ul id="sample_list">
+	<li>this</li>
+	<li>is</li>
+	<li>a</li>
+	<li>test</li>
+</ul>
+</body>
+
+</head>
+</html>
+
