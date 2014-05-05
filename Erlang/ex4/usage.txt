@@ -1,0 +1,15 @@
+1>  Pid = server5:start().
+<0.34.0>
+2> Pid ! {become, fun sum:loop/0}.          
+{become,#Fun<sum.loop.0>}
+3> server5:rpc(Pid, {sum, 10}).
+55
+4> Pid ! {become, fun my_fac_server:loop/0}.
+{become,#Fun<my_fac_server.loop.0>}
+5> server5:rpc(Pid, {fac, 5}).
+120
+6>  
+Erlangプログラミングの244ページ、
+最初server5はwait()の状態で
+sumサーバにするか、my_fac_serverサーバにするかは
+コマンドで知らせる
