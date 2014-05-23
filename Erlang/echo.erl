@@ -3,11 +3,12 @@
 
 go() ->
 	register(echo, spawn(echo, loop, [])),
-	echo ! {self(), hello},
+	echo ! {self(), 'Hello world'},
 	receive
 		{_Pid, Msg} ->
 			io:format("~w~n", [Msg])
-	end.
+	end,
+	echo ! stop.
 
 
 loop() ->
@@ -19,3 +20,6 @@ loop() ->
 			true
 	end.
 
+%	 11> echo:go().
+%	 'Hello world'
+%	 stop
