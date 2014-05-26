@@ -1,6 +1,13 @@
 -module(funs).
 -compile(export_all).
 
+
+sum_list([]) ->
+	0;
+sum_list([H|T]) ->
+	H + sum_list(T).
+
+
 map(_, []) ->
 	[];
 map(F,[H|T]) -> 
